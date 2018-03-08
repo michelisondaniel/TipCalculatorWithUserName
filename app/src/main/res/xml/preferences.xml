@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <CheckBoxPreference
+        android:defaultValue="false"
+        android:key="pref_forget_percent"
+        android:title="Remember Tip Amount" />
+    <ListPreference
+        android:defaultValue="0"
+        android:entries="@array/rounding_keys"
+        android:entryValues="@array/round_values"
+        android:key="pref_rounding"
+        android:title="Set Rounding Preferences" />
+    <EditTextPreference
+        android:defaultValue="John Smith"
+        android:key="edit_text_username"
+        android:selectAllOnFocus="true"
+        android:singleLine="true"
+        android:title="Set User Name" />
+</PreferenceScreen>
